@@ -22,6 +22,81 @@
   <div id="loading">
     <i class="fas fa-5x fa-spinner fa-spin"></i>
   </div>
+  <div class="price">
+    <a href="" id="hi">
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      <span id="quantity-container"></span><span id="price-container"></span>
+    </a>
+  </div>
+  <div id="popup">
+    <div class="shopping-card py-5">
+      <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+      <!-- card -->
+    <div class="shopping py-4">
+      <div class="container">
+
+        <!-- first row -->
+        <div class="row my-3 d-none d-md-flex">
+          <div class="col-md-2 text-center">
+            <p class="text-uppercase m-0 my-3">
+              products
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <p class="text-uppercase m-0 my-3">
+              NAME OF PRODUCTS
+            </p>
+          </div>
+          <div class="col-md-2 text-center">
+            <p class="text-uppercase m-0 my-3">
+              PRICE
+            </p>
+          </div>
+          <div class="col-md-2 text-center">
+            <p class="text-uppercase m-0 my-3">
+              QUANTITY
+            </p>
+          </div>
+          <div class="col-md-2 text-center">
+            <p class="text-uppercase m-0 my-3">
+              TOTAL
+            </p>
+          </div>
+        </div>
+        <!-- end first row -->
+
+        
+        <div class="products-container">
+        </div>
+        
+
+        
+
+       
+
+        <hr class="my-0">
+
+        <!-- total row -->
+        <div class="row">
+
+          <div class="col-md-10 text-center text-uppercase">
+            <h3 class="text-muted">
+              total
+            </h3>
+          </div>
+
+          <div class="col-md-2 d-flex align-items-center justify-content-center">
+            <p class="mb-0 total"></p>
+          </div>
+        </div>
+        <!-- end total row -->
+
+
+      </div>
+    </div>
+    <!-- end card -->
+    </div>
+  </div>
   <!-- nav -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <div class="container">
@@ -57,17 +132,12 @@
         </ul>
         
       </div>
-      <div class="info d-none d-lg-flex align-items-center">
+      <div class="info d-none  d-lg-flex align-items-center">
         <div class="phone mr-3">
           <i class="fa fa-phone" aria-hidden="true"></i>
           <span>123 456 789</span>
         </div>
-        <div class="price">
-          <a href="" id="hi">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <span>2</span>items-$<span>10</span>
-          </a>
-        </div>
+       
       </div>
     </div>
   </nav>
@@ -124,132 +194,7 @@
       </div>
 
       <div class="row py-5">
-        <div class="col-md-4">
-          <div class="item">
-            <div class="emg">
-              <a href="">
-                <img src="img/sweets-1.jpeg" class="img-fluid" alt="">
-              </a>
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </div>
-            <div class="pack">
-              <span>Sweet Item</span>
-              <span>$5</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="item">
-            <div class="emg">
-              <a href="">
-                <img src="img/cupcake-1.jpeg" class="img-fluid" alt="">
-              </a>
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </div>
-            <div class="pack">
-              <span>Cupcake item</span>
-              <span>$5</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="item">
-            <div class="emg">
-              <a href="">
-                <img src="img/cake-1.jpeg" class="img-fluid" alt="">
-              </a>
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </div>
-            <div class="pack">
-              <span>Cake item</span>
-              <span>$5</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="item">
-            <div class="emg">
-              <a href="">
-                <img src="img/doughnut-1.jpeg" class="img-fluid" alt="">
-              </a>
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </div>
-            <div class="pack">
-              <span>Doughnut item</span>
-              <span>$5</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="item">
-            <div class="emg">
-              <a href="">
-                <img src="img/sweets-2.jpeg" class="img-fluid" alt="">
-              </a>
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </div>
-            <div class="pack">
-              <span>Sweet item</span>
-              <span>$5</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="item">
-            <div class="emg">
-              <a href="">
-                <img src="img/cupcake-2.jpeg" class="img-fluid" alt="">
-              </a>
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </div>
-            <div class="pack">
-              <span>Cupcake item</span>
-              <span>$5</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="item">
-            <div class="emg">
-              <a href="">
-                <img src="img/cake-2.jpeg" class="img-fluid" alt="">
-              </a>
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </div>
-            <div class="pack">
-              <span>Cake item</span>
-              <span>$5</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="item">
-            <div class="emg">
-              <a href="">
-                <img src="img/doughnut-2.jpeg" class="img-fluid" alt="">
-              </a>
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </div>
-            <div class="pack">
-              <span>Doughnut item</span>
-              <span>$5</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="item">
-            <div class="emg">
-              <a href="">
-                <img src="img/sweets-3.jpeg" class="img-fluid" alt="">
-              </a>
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </div>
-            <div class="pack">
-              <span>Sweet Item</span>
-              <span>$5</span>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   </div>

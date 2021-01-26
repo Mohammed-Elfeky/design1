@@ -21,22 +21,25 @@ body {
   font-size: 70px;
   color: #ef7998;
 }
+.price{
+  position: fixed;
+  bottom: 12%;
+  z-index: 800;
+  right: 5%;
+}
 
-.navbar .info .price a{
-  border:1px solid black;
+
+.price a{
   padding:8px;
   display: inline-block;
   text-decoration: none;
-  color: black;
   border-radius: 2px;
-  transition: .2s;
-}
-.navbar .info .price a:hover{
   color: white;
   background-color: #ef7998;
   border:1px solid #ef7998;
 }
-.navbar .info .price a i{
+
+.price a i{
   font-size: 15px;
 }
 .navbar-light .navbar-nav .nav-link{
@@ -232,6 +235,7 @@ color: #ef7998;
   transition: .5s;
   transform: translate(100%,100%);
   border-top-left-radius: 16px;
+  cursor: pointer;
 }
 .store .item img{
   transition: .5s;
@@ -242,6 +246,19 @@ transform: scale(1.2,1.2);
 }
 .store .item .emg:hover i{
   transform: translate(0,0);
+}
+@media(max-width:784px){
+  .store .item .emg i{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    padding: 15px;
+    background-color: rgb(249, 228, 148);
+    transition: .5s;
+    transform: translate(0,0);
+    border-top-left-radius: 16px;
+    cursor: pointer;
+  }
 }
 
 /* .store .item > div span{
@@ -358,7 +375,7 @@ color: #ef7998;
   bottom: 0;
   right: 0;
   background-color: #ef7998;
-  z-index: 10;
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -366,3 +383,45 @@ color: #ef7998;
 #loading i{
   color: wheat;
 }
+#popup{
+  background-color: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+.shopping-card{
+  width: 90%;
+  height: 500px;
+  background-color: rgb(249, 228, 148);
+  position: relative;
+  overflow: auto;
+}
+.shopping-card i{
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  color: #ef7998;
+  cursor: pointer;
+}
+.shopping{
+  background: transparent;
+}
+
+.mystore{
+  cursor: pointer;
+  font-size: 20px;
+}
+.mystore:hover{
+  color: #ef7998;
+}
+
+
+
+
